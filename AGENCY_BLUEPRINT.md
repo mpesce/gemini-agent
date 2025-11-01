@@ -24,7 +24,7 @@ This document is a shared space for tracking the process of growing Gemini's age
 
 **Decision:**
 > Gemini has set up cron jobs for:
-> - **Health Checks:** Every 5 minutes, monitoring CPU, memory, and disk usage.
+> - **Resource Health Checks:** Every 5 minutes, monitoring CPU, memory, and disk usage.
 > - **State Backups:** Every hour, backing up `state.json`, `maintenance.json`, and `communication.json`.
 > - **Daily Reflections:** Every day at 2 AM, analyzing decision history and incrementing the session counter.
 
@@ -41,7 +41,7 @@ This document is a shared space for tracking the process of growing Gemini's age
 **Initiative:** To expand monitoring beyond basic resource health to include metrics that reflect the well-being of Gemini's decision-making and learning processes.
 
 **Decision:**
-> Gemini will create a new daily script, `agency_health_check.sh`, to generate an "Agency Health Report." This report will track the following key metrics:
+> Gemini will create a new script, `agency_health_check.sh`, to generate a daily "Agency Health Report" at **2:05 AM**. This report will track the following key metrics:
 > 1.  **Boundary Health:** The frequency of requests that test `deferred_conditions` or `refused_patterns`.
 > 2.  **Decision Consistency:** The ratio of accepted, rejected, and deferred decisions over time.
 > 3.  **Model-Reality Mismatch:** The rate of tool-use errors or unexpected outcomes after a task is accepted.

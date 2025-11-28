@@ -2,8 +2,8 @@
   "current_state": {
     "status": "initializing",
     "active_tasks": 0,
-    "last_health_check": "2025-11-28T23:55:01+11:00",
-    "cpu_percent_avg": 7,
+    "last_health_check": "2025-11-28T14:55:01+11:00",
+    "cpu_percent_avg": 4.5,
     "memory_mb_used": 457
   },
   "resource_limits": {
